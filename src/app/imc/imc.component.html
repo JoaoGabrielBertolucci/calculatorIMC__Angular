@@ -1,12 +1,10 @@
 
 <link rel="styleshet" type="css" href="imc.component.css"/> 
 
-<div class="Insert_peso">
-    Peso<input type="text" name = "num1" [(ngModel)] = "num1" ><br>  
+<div class="Insert_Valores">
+    Peso<input type="text" [(ngModel)]= "peso"><br>
+    Altura<input type="text" [(ngModel)]= "altura" enable><br> 
 </div>
 
-<div class="Insert_Altura">
-    Altura<input type="text" enable><br>
-</div>
-
-Resultado<input type="text"enable>
+<button (click)= "calc()">calcularIMC</button>  
+<input type="text"enable [(ngModel)]= "result">

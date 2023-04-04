@@ -8,10 +8,12 @@ import { Component, importProvidersFrom } from '@angular/core';
 })
 export class ImcComponent {
 
-  num1 : number = 0; 
+  peso : number = 0; 
+  altura: number = 0;
+  result: number = 0;
 
   calc() {
-    this.num1 = 1 + 1;
+    this.result = this.peso + (this.altura * this.altura);
   }
 
 }
