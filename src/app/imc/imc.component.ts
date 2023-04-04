@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, importProvidersFrom } from '@angular/core';
+
 
 @Component({
   selector: 'app-imc',
@@ -8,5 +9,9 @@ import { Component } from '@angular/core';
 export class ImcComponent {
 
   num1 : number = 0; 
+
+  calc() {
+    this.num1 = 1 + 1;
+  }
 
 }
